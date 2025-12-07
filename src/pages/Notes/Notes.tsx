@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../../components/Logo/Logo'
 import VoiceRecorder from '../../components/VoiceRecorder/VoiceRecorder'
-import './Notes.css'
+import './Notes.scss'
 
 const Notes: React.FC = () => {
   return (
