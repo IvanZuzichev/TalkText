@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import './VoiceRecorder.css'
+import './VoiceRecorder.scss'
 import { Document, Packer, Paragraph, TextRun, HeadingLevel } from 'docx'
 
 const VoiceRecorder: React.FC = () => {
