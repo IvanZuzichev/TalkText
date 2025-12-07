@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  talktext-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: talktext-app
+    ports:
+      - "3003:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - talktext-network
+
+networks:
+  talktext-network:
+    driver: bridge

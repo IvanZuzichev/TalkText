@@ -1,0 +1,84 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background: linear-gradient(135deg, #030052 0%, #1a1a6e 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  min-height: 140px;
+}
+
+.logo-icon {
+  width: 80px; 
+  height: 80px; 
+  display: flex;
+    border-radius: 10%;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: #1a1a6e;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    border-radius: 10%;
+}
+
+.logo-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.logo-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 8px 0 0 0;
+  font-weight: 300;
+}
+
+.logo-container > * {
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding: 25px;
+    width: 100%;
+    max-width: 100%;
+    gap: 15px;
+    min-height: auto;
+  }
+  
+  .logo-icon {
+    width: 80px; 
+    height: 80px;
+  }
+  
+  .logo-title {
+    font-size: 2rem;
+  }
+  
+  .logo-subtitle {
+    margin-top: 5px;
+  }
+}
